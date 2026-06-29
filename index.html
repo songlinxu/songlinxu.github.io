@@ -27,6 +27,43 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
+<div id="currentStudentPopup" style="
+display:none;
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 25px rgba(0,0,0,0.3);
+max-width:600px;
+z-index:9999;
+">
+
+<h2>To Current Students</h2>
+
+
+<p>
+Research is a serious matter. 
+
+<br>
+
+Every paper submission should comply with research integrity principles and return a signed declaration form below to me.
+</p>
+
+<p>
+<a href="declaration.pdf" target="_blank">
+Research Integrity Declaration (PDF)
+</a>
+</p>
+
+<button onclick="closeCurrentStudents()">
+Close
+</button>
+
+</div>
+
 <body>
 
   <!-- NAVBAR -->
@@ -138,7 +175,15 @@
           
         </p>
 
-        
+        <br>
+
+        <p>
+          <span class="highlight">
+            Notes for Current Students
+          </span> <a href="#" onclick="showCurrentStudents()">See Here.</a>
+          
+        </p>
+
 
 
 
