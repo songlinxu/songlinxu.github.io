@@ -75,3 +75,15 @@ window.addEventListener("scroll", () => {
   });
 
 });
+
+
+
+function showCurrentStudents() {
+    event.preventDefault();
+    document.getElementById("currentStudentPopup").style.display = "block";
+}
+
+function closeCurrentStudents() {
+    document.getElementById("currentStudentPopup").style.display = "none";
+}
+
